@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tobiee Collection – Premium Muslim Wear</title>
+  <meta name="description" content="Toko online Tobiee Collection. Gamis premium Muslim wear dengan sulaman emas mewah. Belanja mudah, aman, dan terpercaya."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ==================== PRELOADER ==================== -->
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-logo">TC</div>
+    <div class="pre-bar"><div class="pre-fill"></div></div>
+    <p class="pre-txt">TOBIEE COLLECTION</p>
+  </div>
+</div>
+
+<!-- ==================== TOAST ==================== -->
+<div id="toast-wrap"></div>
+
+<!-- ==================== NAVBAR ==================== -->
+<header id="navbar">
+  <div class="nav-top-bar">
+    <div class="ntb-inner">
+      <span>✦ Gratis Ongkir min. Rp 300rb | Kode: <strong>GRATISONGKIR</strong></span>
+      <div class="ntb-right">
+        <a href="#" id="btn-seller-chat">Hubungi Penjual</a>
+        <span class="ntb-sep">|</span>
+        <a href="#" id="btn-download">Download App (soon)</a>
+      </div>
+    </div>
+  </div>
+  <div class="nav-main">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" id="nav-logo" data-page="home">
+        <span class="logo-m">TC</span>
+        <div class="logo-t">
+          <span class="lb">TOBIEE</span>
+          <span class="ls">COLLECTION</span>
+        </div>
+      </a>
+      <div class="nav-search-wrap">
+        <div class="nav-search" id="nav-search-box">
+          <input type="text" id="search-input" placeholder="Cari gamis, warna, ukuran..."/>
+          <button id="search-btn" aria-label="Cari">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          </button>
+        </div>
+        <div class="search-tags">
+          <button class="s-tag" data-q="gamis navy">Gamis Navy</button>
+          <button class="s-tag" data-q="gamis hijau">Gamis Hijau</button>
+          <button class="s-tag" data-q="flash sale">Flash Sale</button>
+          <button class="s-tag" data-q="premium">Premium</button>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="btn-wishlist" aria-label="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="nav-badge" id="wish-count">0</span>
+        </button>
+        <button class="nav-icon-btn" id="btn-cart-open" aria-label="Keranjang">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="nav-badge" id="cart-count">0</span>
+        </button>
+        <div class="nav-auth-area" id="nav-auth-area">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== MAIN APP ==================== -->
+<main id="app-root">
+
+  <!-- ===== PAGE: HOME ===== -->
+  <div id="page-home" class="page active">
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="hero_banner.jpg" alt="Tobiee Collection" class="hero-img"/>
+        <div class="hero-ov"></div>
+      </div>
+      <div class="hero-cnt">
+        <div class="hero-badge">✦ Premium Muslim Wear ✦</div>
+        <h1 class="hero-title"><span class="ht1">TOBIEE</span><span class="ht2">COLLECTION</span></h1>
+        <p class="hero-tag">Keanggunan &amp; Kesucian dalam Setiap Serat</p>
+        <p class="hero-desc">Gamis premium sulaman emas mewah. Pengiriman ke seluruh Indonesia.</p>
+        <div class="hero-btns">
+          <button class="btn-pri" id="hero-shop" data-page="store">Belanja Sekarang</button>
+          <button class="btn-sec" id="hero-more" data-page="about">Tentang Kami</button>
+        </div>
+      </div>
+      <div class="hero-scroll"><span>Scroll</span><div class="sc-line"></div></div>
+      <div class="particles" aria-hidden="true">
+        <div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div><div class="p"></div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>✦ TOBIEE COLLECTION</span><span>✦ PREMIUM MUSLIM WEAR</span>
+        <span>✦ SULAMAN EMAS MEWAH</span><span>✦ GRATIS ONGKIR</span>
+        <span>✦ COD TERSEDIA</span><span>✦ TOBIEE COLLECTION</span>
+        <span>✦ PREMIUM MUSLIM WEAR</span><span>✦ SULAMAN EMAS MEWAH</span>
+        <span>✦ GRATIS ONGKIR</span><span>✦ COD TERSEDIA</span>
+      </div>
+    </div>
+
+    <!-- Flash Sale -->
+    <section class="flash-sale-section">
+      <div class="container">
+        <div class="fs-header">
+          <div class="fs-title-row">
+            <span class="fs-label">⚡ FLASH SALE</span>
+            <div class="fs-countdown" id="fs-countdown">
+              <div class="cd-unit"><span id="cd-h">00</span><small>JAM</small></div>
+              <div class="cd-sep">:</div>
+              <div class="cd-unit"><span id="cd-m">00</span><small>MENIT</small></div>
+              <div class="cd-sep">:</div>
+              <div class="cd-unit"><span id="cd-s">00</span><small>DETIK</small></div>
+            </div>
+          </div>
+          <button class="btn-see-all" data-page="store">Lihat Semua →</button>
+        </div>
+        <div class="fs-grid" id="fs-grid">
+          <!-- Filled by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Banner -->
+    <section class="cat-section">
+      <div class="container">
+        <div class="cat-grid">
+          <div class="cat-card" data-filter="gamis" data-page="store">
+            <div class="cat-icon">👗</div>
+            <span>Gamis</span>
+          </div>
+          <div class="cat-card" data-filter="set" data-page="store">
+            <div class="cat-icon">✨</div>
+            <span>Gamis Set</span>
+          </div>
+          <div class="cat-card" data-filter="premium" data-page="store">
+            <div class="cat-icon">👑</div>
+            <span>Premium</span>
+          </div>
+          <div class="cat-card" data-filter="new" data-page="store">
+            <div class="cat-icon">🆕</div>
+            <span>Terbaru</span>
+          </div>
+          <div class="cat-card" data-filter="sale" data-page="store">
+            <div class="cat-icon">🏷️</div>
+            <span>Promo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Home -->
+    <section class="home-products">
+      <div class="container">
+        <div class="section-header">
+          <span class="sec-badge">Koleksi Unggulan</span>
+          <h2 class="sec-title">Pilihan Terpopuler</h2>
+          <div class="gold-div"><span>✦</span></div>
+        </div>
+        <div class="products-grid" id="home-prod-grid"><!-- Filled by JS --></div>
+        <div class="center-btn">
+          <button class="btn-pri" data-page="store">Lihat Semua Produk</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+      <div class="container">
+        <div class="feat-grid">
+          <div class="feat-item"><div class="feat-ico">🚚</div><h3>Gratis Ongkir</h3><p>Min. pembelian Rp 300.000 ke seluruh Indonesia</p></div>
+          <div class="feat-item"><div class="feat-ico">🔒</div><h3>Transaksi Aman</h3><p>Pembayaran terjamin dengan enkripsi data</p></div>
+          <div class="feat-item"><div class="feat-ico">↩️</div><h3>Garansi Kualitas</h3><p>Produk tidak sesuai? Kami siap membantu</p></div>
+          <div class="feat-item"><div class="feat-ico">⭐</div><h3>Rating Tertinggi</h3><p>Dipercaya 1500+ pelanggan setia</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testi-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="sec-badge">Testimoni</span>
+          <h2 class="sec-title">Apa Kata Mereka</h2>
+          <div class="gold-div"><span>✦</span></div>
+        </div>
+        <div class="testi-slider">
+          <div class="testi-track" id="testi-track">
+            <div class="testi-card"><div class="tc-stars">★★★★★</div><p>"Gamis Navy Royal sangat cantik! Kualitas premium, sulaman emasnya detail. Sudah beli 3 kali dan selalu puas!"</p><div class="tc-user"><div class="tc-av">S</div><div><b>Siti Nurhaliza</b><span>Jakarta · Verified Buyer</span></div></div></div>
+            <div class="testi-card"><div class="tc-stars">★★★★★</div><p>"Bahan sangat adem dan jatuh di badan. Packaging cantik, berasa beli barang mewah. Recommended!"</p><div class="tc-user"><div class="tc-av">F</div><div><b>Fatimah Azzahra</b><span>Bandung · Verified Buyer</span></div></div></div>
+            <div class="testi-card"><div class="tc-stars">★★★★★</div><p>"Nyari gamis premium worth it. Akhirnya ketemu Tobiee! Gamis Sage Green banyak yang nanya beli dimana!"</p><div class="tc-user"><div class="tc-av">A</div><div><b>Aisyah Putri</b><span>Surabaya · Verified Buyer</span></div></div></div>
+            <div class="testi-card"><div class="tc-stars">★★★★★</div><p>"Respon cepat dan ramah. Pengiriman aman tepat waktu. Gamisnya lebih cantik dari foto aslinya!"</p><div class="tc-user"><div class="tc-av">R</div><div><b>Rahma Dewi</b><span>Medan · Verified Buyer</span></div></div></div>
+          </div>
+          <div class="testi-dots" id="testi-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-logo"><span class="logo-m">TC</span><div class="logo-t"><span class="lb">TOBIEE</span><span class="ls">COLLECTION</span></div></div>
+            <p class="ft-tag">Premium Muslim Wear</p>
+            <p class="ft-desc">Keanggunan &amp; Kesucian dalam Setiap Serat</p>
+            <div class="ft-socials">
+              <a href="https://wa.me/6285864554590" target="_blank" class="ft-social-btn">WhatsApp</a>
+              <a href="https://instagram.com/TobieeCollection" target="_blank" class="ft-social-btn">Instagram</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Navigasi</h4>
+            <a href="#" data-page="home">Beranda</a>
+            <a href="#" data-page="store">Koleksi</a>
+            <a href="#" data-page="about">Tentang</a>
+            <a href="#" data-page="orders">Pesanan Saya</a>
+          </div>
+          <div class="footer-col">
+            <h4>Bantuan</h4>
+            <a href="#">Cara Belanja</a>
+            <a href="#">Cara Pembayaran</a>
+            <a href="#">Lacak Pesanan</a>
+            <a href="#">Kebijakan Pengembalian</a>
+          </div>
+          <div class="footer-col">
+            <h4>Kontak</h4>
+            <p>📱 +62 858-6455-4590</p>
+            <p>📸 @TobieeCollection</p>
+            <p>🕐 Senin-Sabtu 08.00-21.00</p>
+          </div>
+        </div>
+        <div class="footer-bot">
+          <p>© 2024 Tobiee Collection. All Rights Reserved.</p>
+          <div class="pay-icons">
+            <span class="pay-ico">BCA</span><span class="pay-ico">Mandiri</span><span class="pay-ico">BNI</span><span class="pay-ico">BRI</span><span class="pay-ico">QRIS</span><span class="pay-ico">COD</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div><!-- /page-home -->
+
+  <!-- ===== PAGE: STORE ===== -->
+  <div id="page-store" class="page">
+    <div class="store-layout">
+      <!-- Sidebar Filter -->
+      <aside class="store-sidebar" id="store-sidebar">
+        <div class="sb-header">
+          <h3>Filter</h3>
+          <button class="btn-clear-filter" id="btn-clear-filter">Reset</button>
+        </div>
+        <div class="sb-section">
+          <h4>Kategori</h4>
+          <label class="sb-check"><input type="radio" name="cat" value="all" checked/> Semua Produk</label>
+          <label class="sb-check"><input type="radio" name="cat" value="gamis"/> Gamis</label>
+          <label class="sb-check"><input type="radio" name="cat" value="set"/> Gamis Set</label>
+          <label class="sb-check"><input type="radio" name="cat" value="premium"/> Premium</label>
+          <label class="sb-check"><input type="radio" name="cat" value="sale"/> Promo / Sale</label>
+        </div>
+        <div class="sb-section">
+          <h4>Harga</h4>
+          <div class="price-range">
+            <input type="range" id="price-min" min="0" max="1000000" step="50000" value="0"/>
+            <div class="price-labels">
+              <span id="price-min-lbl">Rp 0</span>
+              <span id="price-max-lbl">Rp 1.000.000</span>
+            </div>
+          </div>
+        </div>
+        <div class="sb-section">
+          <h4>Rating</h4>
+          <label class="sb-check"><input type="radio" name="rating" value="0" checked/> Semua Rating</label>
+          <label class="sb-check"><input type="radio" name="rating" value="4"/> ★★★★ ke atas</label>
+          <label class="sb-check"><input type="radio" name="rating" value="4.5"/> ★★★★★ 4.5+</label>
+        </div>
+        <div class="sb-section">
+          <h4>Ukuran Tersedia</h4>
+          <div class="size-filter-grid" id="size-filter-grid">
+            <button class="sz-f-btn active" data-size="all">Semua</button>
+            <button class="sz-f-btn" data-size="S">S</button>
+            <button class="sz-f-btn" data-size="M">M</button>
+            <button class="sz-f-btn" data-size="L">L</button>
+            <button class="sz-f-btn" data-size="XL">XL</button>
+            <button class="sz-f-btn" data-size="XXL">XXL</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Products Area -->
+      <div class="store-main">
+        <div class="store-top-bar">
+          <div class="stb-left">
+            <button class="btn-sidebar-toggle" id="btn-sidebar-toggle">☰ Filter</button>
+            <span class="prod-count" id="prod-count">0 Produk</span>
+          </div>
+          <div class="stb-right">
+            <select id="sort-select" class="sort-sel">
+              <option value="default">Paling Relevan</option>
+              <option value="price-asc">Harga: Termurah</option>
+              <option value="price-desc">Harga: Termahal</option>
+              <option value="rating">Rating Tertinggi</option>
+              <option value="newest">Terbaru</option>
+              <option value="bestseller">Terlaris</option>
+            </select>
+          </div>
+        </div>
+        <div class="products-grid" id="store-prod-grid"><!-- Filled by JS --></div>
+        <div class="store-pagination" id="store-pagination"></div>
+      </div>
+    </div>
+  </div><!-- /page-store -->
+
+  <!-- ===== PAGE: PRODUCT DETAIL ===== -->
+  <div id="page-product" class="page">
+    <div class="container">
+      <div class="breadcrumb" id="product-breadcrumb"></div>
+      <div class="product-detail-layout">
+        <!-- Images -->
+        <div class="pd-imgs">
+          <div class="pd-main-img">
+            <img id="pd-img-main" src="" alt=""/>
+            <div class="pd-badge" id="pd-badge"></div>
+          </div>
+          <div class="pd-thumbs" id="pd-thumbs"></div>
+        </div>
+        <!-- Info -->
+        <div class="pd-info">
+          <div class="pd-tag" id="pd-tag"></div>
+          <h1 class="pd-name" id="pd-name"></h1>
+          <div class="pd-rating-row">
+            <div class="pd-stars" id="pd-stars"></div>
+            <span class="pd-rev-count" id="pd-rev-count"></span>
+            <span class="pd-sold" id="pd-sold"></span>
+          </div>
+          <div class="pd-price-box">
+            <span class="pd-price" id="pd-price"></span>
+            <span class="pd-price-old" id="pd-price-old"></span>
+            <span class="pd-disc-badge" id="pd-disc-badge"></span>
+          </div>
+          <div class="pd-section"><span class="pd-lbl">Deskripsi</span><p class="pd-desc" id="pd-desc"></p></div>
+          <div class="pd-section">
+            <span class="pd-lbl">Pilih Ukuran</span>
+            <div class="pd-sizes" id="pd-sizes"></div>
+            <a href="#" class="pd-size-guide">Panduan Ukuran</a>
+          </div>
+          <div class="pd-section">
+            <span class="pd-lbl">Jumlah</span>
+            <div class="qty-ctrl">
+              <button class="qty-btn" id="pd-qty-minus">−</button>
+              <input type="number" id="pd-qty" value="1" min="1" max="99"/>
+              <button class="qty-btn" id="pd-qty-plus">+</button>
+              <span class="pd-stock" id="pd-stock"></span>
+            </div>
+          </div>
+          <div class="pd-actions">
+            <button class="btn-wishlist-pd" id="btn-pd-wish"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> Wishlist</button>
+            <button class="btn-add-cart-pd" id="btn-pd-cart">+ Keranjang</button>
+            <button class="btn-buy-now-pd" id="btn-pd-buy">Beli Sekarang</button>
+          </div>
+          <div class="pd-shipping-info">
+            <div class="shi-row"><span>🚚</span><div><b>Pengiriman</b><p>JNE, J&T, SiCepat, AnterAja, Pos Indonesia</p></div></div>
+            <div class="shi-row"><span>🔒</span><div><b>Garansi</b><p>Kualitas terjamin. Proses retur mudah.</p></div></div>
+            <div class="shi-row"><span>📦</span><div><b>Dikemas</b><p>Aman dan rapi dengan packaging premium</p></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Reviews -->
+      <div class="reviews-section">
+        <h3 class="rev-title">Ulasan Pembeli</h3>
+        <div class="rev-summary" id="rev-summary"></div>
+        <div class="rev-list" id="rev-list"></div>
+      </div>
+    </div>
+  </div><!-- /page-product -->
+
+  <!-- ===== PAGE: CART ===== -->
+  <div id="page-cart" class="page">
+    <div class="container">
+      <h2 class="page-title">Keranjang Belanja</h2>
+      <div class="cart-layout">
+        <div class="cart-main">
+          <div class="cart-header-row">
+            <label class="cart-select-all"><input type="checkbox" id="cart-select-all"/> Pilih Semua</label>
+            <button id="btn-delete-selected" class="btn-del-sel">Hapus yang dipilih</button>
+          </div>
+          <div id="cart-items-list"><!-- Filled by JS --></div>
+        </div>
+        <div class="cart-summary">
+          <h3>Ringkasan Belanja</h3>
+          <div class="coupon-row">
+            <input type="text" id="coupon-input" placeholder="Masukkan kode kupon"/>
+            <button id="btn-apply-coupon">Pakai</button>
+          </div>
+          <div class="coupon-status" id="coupon-status"></div>
+          <div class="avail-coupons" id="avail-coupons">
+            <p class="ac-title">🏷️ Kupon Tersedia:</p>
+          </div>
+          <div class="summary-rows">
+            <div class="sum-row"><span>Subtotal</span><span id="sum-subtotal">Rp 0</span></div>
+            <div class="sum-row disc" id="sum-disc-row" style="display:none"><span>Diskon Kupon</span><span id="sum-disc">- Rp 0</span></div>
+            <div class="sum-row"><span>Ongkos Kirim</span><span id="sum-shipping">Dihitung saat checkout</span></div>
+            <div class="sum-row total"><span>Total</span><span id="sum-total">Rp 0</span></div>
+          </div>
+          <button class="btn-checkout-now" id="btn-go-checkout">Lanjut ke Checkout</button>
+          <button class="btn-continue-shop" data-page="store">← Lanjut Belanja</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- /page-cart -->
+
+  <!-- ===== PAGE: CHECKOUT ===== -->
+  <div id="page-checkout" class="page">
+    <div class="container">
+      <h2 class="page-title">Checkout</h2>
+      <div class="checkout-steps" id="checkout-steps">
+        <div class="cs-step active" data-step="1"><div class="cs-num">1</div><span>Alamat</span></div>
+        <div class="cs-line"></div>
+        <div class="cs-step" data-step="2"><div class="cs-num">2</div><span>Pengiriman</span></div>
+        <div class="cs-line"></div>
+        <div class="cs-step" data-step="3"><div class="cs-num">3</div><span>Pembayaran</span></div>
+        <div class="cs-line"></div>
+        <div class="cs-step" data-step="4"><div class="cs-num">4</div><span>Konfirmasi</span></div>
+      </div>
+
+      <div class="checkout-layout">
+        <div class="checkout-main">
+          <!-- Step 1: Address -->
+          <div class="co-step-content active" id="co-step-1">
+            <h3>📍 Alamat Pengiriman</h3>
+            <div class="addr-form">
+              <div class="form-row-2">
+                <div class="form-group"><label>Nama Penerima *</label><input type="text" id="co-name" placeholder="Nama lengkap"/></div>
+                <div class="form-group"><label>No. HP *</label><input type="text" id="co-phone" placeholder="08xxxxxxxxxx"/></div>
+              </div>
+              <div class="form-group"><label>Alamat Lengkap *</label><textarea id="co-address" rows="3" placeholder="Jl. Nama Jalan No. xx, RT/RW, Kelurahan, Kecamatan"></textarea></div>
+              <div class="form-row-3">
+                <div class="form-group"><label>Provinsi *</label>
+                  <select id="co-province"><option value="">Pilih Provinsi</option></select>
+                </div>
+                <div class="form-group"><label>Kota/Kabupaten *</label>
+                  <select id="co-city"><option value="">Pilih Kota</option></select>
+                </div>
+                <div class="form-group"><label>Kode Pos *</label><input type="text" id="co-zip" placeholder="12345"/></div>
+              </div>
+              <div class="form-group"><label>Catatan untuk Penjual</label><textarea id="co-note" rows="2" placeholder="Warna, ukuran spesifik, dll..."></textarea></div>
+            </div>
+            <button class="btn-next-step" id="btn-step1-next">Pilih Pengiriman →</button>
+          </div>
+
+          <!-- Step 2: Shipping -->
+          <div class="co-step-content" id="co-step-2">
+            <h3>🚚 Pilih Jasa Pengiriman</h3>
+            <div class="shipping-options" id="shipping-options"><!-- Filled by JS --></div>
+            <div class="step-nav">
+              <button class="btn-prev-step" id="btn-step2-back">← Kembali</button>
+              <button class="btn-next-step" id="btn-step2-next">Pilih Pembayaran →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Payment -->
+          <div class="co-step-content" id="co-step-3">
+            <h3>💳 Metode Pembayaran</h3>
+            <div class="pay-methods">
+              <div class="pay-group">
+                <div class="pay-group-title">Transfer Bank</div>
+                <div class="pay-options" id="bank-options">
+                  <label class="pay-opt" data-method="bca">
+                    <input type="radio" name="payment" value="bca"/>
+                    <div class="po-body">
+                      <div class="po-logo bca-logo">BCA</div>
+                      <div class="po-info"><b>Bank BCA</b><span>Virtual Account</span></div>
+                    </div>
+                  </label>
+                  <label class="pay-opt" data-method="mandiri">
+                    <input type="radio" name="payment" value="mandiri"/>
+                    <div class="po-body">
+                      <div class="po-logo mandiri-logo">MDR</div>
+                      <div class="po-info"><b>Bank Mandiri</b><span>Virtual Account</span></div>
+                    </div>
+                  </label>
+                  <label class="pay-opt" data-method="bni">
+                    <input type="radio" name="payment" value="bni"/>
+                    <div class="po-body">
+                      <div class="po-logo bni-logo">BNI</div>
+                      <div class="po-info"><b>Bank BNI</b><span>Virtual Account</span></div>
+                    </div>
+                  </label>
+                  <label class="pay-opt" data-method="bri">
+                    <input type="radio" name="payment" value="bri"/>
+                    <div class="po-body">
+                      <div class="po-logo bri-logo">BRI</div>
+                      <div class="po-info"><b>Bank BRI</b><span>Virtual Account</span></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="pay-group">
+                <div class="pay-group-title">QRIS</div>
+                <label class="pay-opt" data-method="qris">
+                  <input type="radio" name="payment" value="qris"/>
+                  <div class="po-body">
+                    <div class="po-logo qris-logo">QRIS</div>
+                    <div class="po-info"><b>QRIS</b><span>Scan QR Code – semua e-wallet</span></div>
+                  </div>
+                </label>
+              </div>
+              <div class="pay-group">
+                <div class="pay-group-title">Bayar di Tempat</div>
+                <label class="pay-opt" data-method="cod">
+                  <input type="radio" name="payment" value="cod"/>
+                  <div class="po-body">
+                    <div class="po-logo cod-logo">COD</div>
+                    <div class="po-info"><b>COD (Bayar di Tempat)</b><span>Bayar saat paket tiba</span></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="step-nav">
+              <button class="btn-prev-step" id="btn-step3-back">← Kembali</button>
+              <button class="btn-next-step" id="btn-step3-next">Konfirmasi Pesanan →</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Confirmation -->
+          <div class="co-step-content" id="co-step-4">
+            <h3>✅ Konfirmasi Pesanan</h3>
+            <div class="confirm-order" id="confirm-order"><!-- Filled by JS --></div>
+            <div class="step-nav">
+              <button class="btn-prev-step" id="btn-step4-back">← Kembali</button>
+              <button class="btn-place-order" id="btn-place-order">🛍️ Buat Pesanan</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Checkout Summary -->
+        <div class="checkout-summary">
+          <h3>Ringkasan Pesanan</h3>
+          <div id="co-summary-items"><!-- Filled by JS --></div>
+          <div class="co-sum-rows">
+            <div class="sum-row"><span>Subtotal</span><span id="co-sum-sub">Rp 0</span></div>
+            <div class="sum-row" id="co-sum-disc-row"><span>Diskon</span><span id="co-sum-disc">- Rp 0</span></div>
+            <div class="sum-row"><span>Ongkos Kirim</span><span id="co-sum-ship">-</span></div>
+            <div class="sum-row total"><span>Total</span><span id="co-sum-total">Rp 0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /page-checkout -->
+
+  <!-- ===== PAGE: ORDER SUCCESS ===== -->
+  <div id="page-order-success" class="page">
+    <div class="container">
+      <div class="order-success-wrap">
+        <div class="success-icon">✅</div>
+        <h2>Pesanan Berhasil Dibuat!</h2>
+        <p id="success-order-id"></p>
+        <div id="success-payment-info" class="payment-instruction"></div>
+        <div class="success-actions">
+          <button class="btn-pri" data-page="orders">Lihat Pesanan Saya</button>
+          <button class="btn-sec" data-page="home">Lanjut Belanja</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PAGE: ORDERS ===== -->
+  <div id="page-orders" class="page">
+    <div class="container">
+      <h2 class="page-title">Pesanan Saya</h2>
+      <div class="orders-tabs" id="orders-tabs">
+        <button class="ord-tab active" data-status="all">Semua</button>
+        <button class="ord-tab" data-status="pending">Menunggu Bayar</button>
+        <button class="ord-tab" data-status="confirmed">Dikonfirmasi</button>
+        <button class="ord-tab" data-status="processing">Diproses</button>
+        <button class="ord-tab" data-status="shipped">Dikirim</button>
+        <button class="ord-tab" data-status="done">Selesai</button>
+        <button class="ord-tab" data-status="cancelled">Dibatalkan</button>
+      </div>
+      <div id="orders-list"><!-- Filled by JS --></div>
+    </div>
+  </div>
+
+  <!-- ===== PAGE: PROFILE ===== -->
+  <div id="page-profile" class="page">
+    <div class="container">
+      <div class="profile-layout">
+        <div class="profile-sidebar">
+          <div class="profile-avatar-wrap">
+            <div class="profile-avatar" id="profile-avatar-big">U</div>
+            <div class="pa-info">
+              <b id="profile-name-display">User</b>
+              <span id="profile-email-display">user@email.com</span>
+            </div>
+          </div>
+          <nav class="profile-nav">
+            <button class="pnav-btn active" data-ptab="info">👤 Informasi Akun</button>
+            <button class="pnav-btn" data-ptab="address">📍 Alamat Saya</button>
+            <button class="pnav-btn" data-ptab="security">🔒 Keamanan</button>
+          </nav>
+        </div>
+        <div class="profile-content">
+          <div class="ptab active" id="ptab-info">
+            <h3>Informasi Akun</h3>
+            <form id="profile-form">
+              <div class="form-row-2">
+                <div class="form-group"><label>Nama Lengkap</label><input type="text" id="pf-name"/></div>
+                <div class="form-group"><label>Nomor HP</label><input type="text" id="pf-phone"/></div>
+              </div>
+              <div class="form-group"><label>Email</label><input type="email" id="pf-email" disabled/></div>
+              <div class="form-group"><label>Tanggal Lahir</label><input type="date" id="pf-dob"/></div>
+              <div class="form-group"><label>Jenis Kelamin</label>
+                <select id="pf-gender"><option value="">Pilih</option><option value="P">Perempuan</option><option value="L">Laki-laki</option></select>
+              </div>
+              <button type="submit" class="btn-pri">Simpan Perubahan</button>
+            </form>
+          </div>
+          <div class="ptab" id="ptab-address">
+            <h3>Alamat Tersimpan</h3>
+            <div id="saved-addresses"><!-- Filled by JS --></div>
+            <button class="btn-add-addr" id="btn-add-addr">+ Tambah Alamat Baru</button>
+          </div>
+          <div class="ptab" id="ptab-security">
+            <h3>Keamanan Akun</h3>
+            <form id="security-form">
+              <div class="form-group"><label>Password Lama</label><input type="password" id="sf-old-pass"/></div>
+              <div class="form-group"><label>Password Baru</label><input type="password" id="sf-new-pass"/></div>
+              <div class="form-group"><label>Konfirmasi Password Baru</label><input type="password" id="sf-conf-pass"/></div>
+              <button type="submit" class="btn-pri">Ubah Password</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PAGE: WISHLIST ===== -->
+  <div id="page-wishlist" class="page">
+    <div class="container">
+      <h2 class="page-title">❤️ Wishlist Saya</h2>
+      <div class="products-grid" id="wishlist-grid"><!-- Filled by JS --></div>
+      <div id="wishlist-empty" style="display:none" class="empty-state">
+        <div class="es-icon">❤️</div>
+        <h3>Wishlist Kosong</h3>
+        <p>Belum ada produk yang disimpan. Jelajahi koleksi kami!</p>
+        <button class="btn-pri" data-page="store">Lihat Koleksi</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PAGE: ABOUT ===== -->
+  <div id="page-about" class="page">
+    <div class="about-page">
+      <div class="about-hero">
+        <img src="about_banner.jpg" alt="Tentang Tobiee Collection"/>
+        <div class="ah-ov"></div>
+        <div class="ah-cnt">
+          <span class="sec-badge">Tentang Kami</span>
+          <h2>Detail Sulaman Emas Mewah</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="about-body">
+          <div class="about-text">
+            <p>Tobiee Collection hadir sebagai pilihan utama busana muslim premium di Indonesia. Setiap koleksi dirancang dengan cermat menggunakan bahan pilihan terbaik dan detail sulaman emas yang dikerjakan oleh pengrajin berpengalaman.</p>
+            <p>Kami percaya bahwa berbusana muslim bukan sekadar kewajiban, tetapi juga ekspresi keindahan dan keanggunan seorang muslimah.</p>
+          </div>
+          <div class="about-stats-grid">
+            <div class="asg-item"><div class="asg-num" data-target="1500">0+</div><div class="asg-lbl">Pelanggan Puas</div></div>
+            <div class="asg-item"><div class="asg-num" data-target="50">0+</div><div class="asg-lbl">Koleksi</div></div>
+            <div class="asg-item"><div class="asg-num" data-target="3">0+</div><div class="asg-lbl">Tahun Pengalaman</div></div>
+            <div class="asg-item"><div class="asg-num" data-target="98">0%</div><div class="asg-lbl">Kepuasan Pelanggan</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main><!-- /app-root -->
+
+<!-- ==================== AUTH MODAL ==================== -->
+<div class="modal-overlay" id="auth-modal">
+  <div class="auth-modal-box" onclick="event.stopPropagation()">
+    <button class="modal-x" id="auth-modal-close">✕</button>
+    <div class="auth-logo"><span class="logo-m">TC</span></div>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active" id="tab-login">Masuk</button>
+      <button class="auth-tab" id="tab-register">Daftar</button>
+    </div>
+
+    <!-- Login Form -->
+    <form class="auth-form active" id="login-form">
+      <div class="form-group"><label>Email</label><input type="email" id="li-email" placeholder="email@anda.com" required/></div>
+      <div class="form-group"><label>Password</label>
+        <div class="pass-wrap"><input type="password" id="li-pass" placeholder="••••••••" required/>
+        <button type="button" class="btn-toggle-pass" id="li-toggle">👁</button></div>
+      </div>
+      <div class="form-row-space"><label class="remember-lbl"><input type="checkbox" id="li-remember"/> Ingat saya</label><a href="#" class="forgot-link">Lupa password?</a></div>
+      <div class="form-error" id="li-error"></div>
+      <button type="submit" class="btn-auth">Masuk</button>
+      <p class="auth-switch">Belum punya akun? <a href="#" id="sw-to-reg">Daftar sekarang</a></p>
+    </form>
+
+    <!-- Register Form -->
+    <form class="auth-form" id="register-form">
+      <div class="form-row-2">
+        <div class="form-group"><label>Nama Lengkap</label><input type="text" id="reg-name" placeholder="Nama Anda" required/></div>
+        <div class="form-group"><label>No. HP</label><input type="text" id="reg-phone" placeholder="08xxxxxxxxxx" required/></div>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" id="reg-email" placeholder="email@anda.com" required/></div>
+      <div class="form-group"><label>Password</label>
+        <div class="pass-wrap"><input type="password" id="reg-pass" placeholder="Min. 6 karakter" required/>
+        <button type="button" class="btn-toggle-pass" id="reg-toggle">👁</button></div>
+      </div>
+      <div class="form-group"><label>Konfirmasi Password</label><input type="password" id="reg-conf" placeholder="Ulangi password" required/></div>
+      <div class="form-group"><label class="tnc-lbl"><input type="checkbox" id="reg-tnc" required/> Saya setuju dengan <a href="#">Syarat &amp; Ketentuan</a></label></div>
+      <div class="form-error" id="reg-error"></div>
+      <button type="submit" class="btn-auth">Daftar Sekarang</button>
+      <p class="auth-switch">Sudah punya akun? <a href="#" id="sw-to-login">Masuk sekarang</a></p>
+    </form>
+  </div>
+</div>
+
+<!-- ==================== REVIEW MODAL ==================== -->
+<div class="modal-overlay" id="review-modal">
+  <div class="review-modal-box" onclick="event.stopPropagation()">
+    <button class="modal-x" id="review-modal-close">✕</button>
+    <h3>Tulis Ulasan</h3>
+    <div class="rev-prod-info" id="rev-prod-info"></div>
+    <div class="star-input-wrap">
+      <span class="star-input-lbl">Rating:</span>
+      <div class="star-input" id="star-input">
+        <span class="si" data-v="1">★</span><span class="si" data-v="2">★</span>
+        <span class="si" data-v="3">★</span><span class="si" data-v="4">★</span><span class="si" data-v="5">★</span>
+      </div>
+    </div>
+    <div class="form-group"><label>Ulasan Anda</label><textarea id="rev-text" rows="4" placeholder="Bagikan pengalaman Anda dengan produk ini..."></textarea></div>
+    <button class="btn-pri" id="btn-submit-review">Kirim Ulasan</button>
+  </div>
+</div>
+
+<!-- ==================== CART DRAWER ==================== -->
+<div class="drawer-overlay" id="cart-drawer-overlay"></div>
+<div class="cart-drawer" id="cart-drawer">
+  <div class="cd-header">
+    <h3>Keranjang (<span id="cd-count">0</span>)</h3>
+    <button class="cd-close" id="cd-close">✕</button>
+  </div>
+  <div class="cd-body" id="cd-body"><!-- Filled by JS --></div>
+  <div class="cd-footer" id="cd-footer">
+    <div class="cd-total-row"><span>Total:</span><span id="cd-total">Rp 0</span></div>
+    <button class="btn-pri" id="btn-go-cart">Lihat Keranjang</button>
+    <button class="btn-checkout-quick" id="btn-quick-checkout">Checkout Sekarang</button>
+  </div>
+</div>
+
+<!-- ==================== USER DROPDOWN ==================== -->
+<div class="user-dropdown" id="user-dropdown">
+  <div class="ud-arrow"></div>
+  <div class="ud-header" id="ud-header-info"></div>
+  <nav class="ud-nav">
+    <a href="#" data-page="profile" class="ud-link">👤 Profil Saya</a>
+    <a href="#" data-page="orders" class="ud-link">📦 Pesanan Saya</a>
+    <a href="#" data-page="wishlist" class="ud-link">❤️ Wishlist</a>
+    <hr/>
+    <button class="ud-link ud-logout" id="btn-logout">🚪 Keluar</button>
+  </nav>
+</div>
+
+<!-- ==================== FLOATING WA ==================== -->
+<a href="https://wa.me/6285864554590" target="_blank" class="float-wa" id="float-wa">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  <span>Chat Kami</span>
+</a>
+
+<script src="store.js"></script>
+<script src="auth.js"></script>
+<script src="cart.js"></script>
+<script src="orders.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
